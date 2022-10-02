@@ -21,5 +21,7 @@ public class Fabricante {
 		this.pais = pais;
 	}	
 	
-	
+	public void fabricaMayorVentas() {
+		Vehiculo.fabricaMayorVentas();
+	}
 }

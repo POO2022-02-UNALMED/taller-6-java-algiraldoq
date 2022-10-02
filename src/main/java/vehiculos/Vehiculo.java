@@ -16,7 +16,7 @@ public class Vehiculo {
 	public Integer cantidadAutomoviles;
 	public Integer cantidadCamionetas;
 	public Integer cantidadCamiones;
-	public ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
+	public static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 
 	public String getPlaca() {
 		return placa;
@@ -95,7 +95,7 @@ public class Vehiculo {
 				+ cantidadCamiones;
 	}
 	
-	public String paisMasVendedor () {
+	public static String paisMasVendedor () {
 		Integer mayor = 0;
 		String paisMasVendedor = null;
 		
@@ -110,7 +110,7 @@ public class Vehiculo {
 		return paisMasVendedor;
 	}
 	
-	public String fabricaMayorVentas () {
+	public static String fabricaMayorVentas () {
 		Integer mayor = 0;
 		String fabricanteMayor = null;
 		
