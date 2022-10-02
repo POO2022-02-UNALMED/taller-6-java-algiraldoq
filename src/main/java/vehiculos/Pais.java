@@ -14,7 +14,7 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	public void PaisMasVendedor() {
+	public void paisMasVendedor() {
 		Vehiculo.paisMasVendedor();
 	}
 }
