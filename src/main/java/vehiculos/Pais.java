@@ -3,6 +3,9 @@ package vehiculos;
 public class Pais {
 	public String nombre;
 
+	public Pais (String pais) {
+		this.nombre = pais;
+	}
 	public String getNombre() {
 		return nombre;
 	}
