@@ -24,6 +24,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		Fabricante.fabricantes.add(fabricante);
+		setCantidadVehiculos();
 	}
 	public String getPlaca() {
 		return placa;
@@ -93,8 +94,8 @@ public class Vehiculo {
 		return CantidadVehiculos;
 	}
 
-	public void setCantidadVehiculos(Integer cantidadVehiculos) {
-		CantidadVehiculos = cantidadVehiculos;
+	public void setCantidadVehiculos() {
+		CantidadVehiculos++;
 	}
 
 	public String vehiculosPorTipos() {
