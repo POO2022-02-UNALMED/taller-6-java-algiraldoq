@@ -9,10 +9,10 @@ public class Vehiculo {
 	public Integer peso;
 	public String traccion;
 	public Fabricante fabricante;
-	public static Integer CantidadVehiculos;
-	public static Integer cantidadAutomoviles;
-	public static Integer cantidadCamionetas;
-	public static Integer cantidadCamiones;
+	public static Integer CantidadVehiculos = 0;
+	public static Integer cantidadAutomoviles = 0;
+	public static Integer cantidadCamionetas = 0;
+	public static Integer cantidadCamiones = 0;
 	
 	public Vehiculo (String placa, Integer puertas, Integer velocidadmaxima, String nombre, Integer precio, Integer peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
