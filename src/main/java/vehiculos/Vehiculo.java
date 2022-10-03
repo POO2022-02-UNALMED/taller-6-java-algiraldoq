@@ -1,8 +1,5 @@
 package vehiculos;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 public class Vehiculo {
 	public String placa;
 	public Integer puertas;
@@ -16,8 +13,18 @@ public class Vehiculo {
 	public Integer cantidadAutomoviles;
 	public Integer cantidadCamionetas;
 	public Integer cantidadCamiones;
-	public static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
-
+	
+	public Vehiculo (String placa, Integer puertas, Integer velocidadmaxima, String nombre, Integer precio, Integer peso, String traccion, Fabricante fabricante) {
+		this.placa = placa;
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadmaxima;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.peso = peso;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
+		Fabricante.fabricantes.add(fabricante);
+	}
 	public String getPlaca() {
 		return placa;
 	}
@@ -95,33 +102,33 @@ public class Vehiculo {
 				+ cantidadCamiones;
 	}
 	
-	public static String paisMasVendedor () {
-		Integer mayor = 0;
-		String paisMasVendedor = null;
-		
-		for (int i = 0; i < fabricantes.size(); i++){
-			int f = Collections.frequency(fabricantes, fabricantes.get(i).getPais());
-			
-			if (mayor < f) {
-				mayor = f;
-				paisMasVendedor = fabricantes.get(i).getPais().getNombre();
-			}
-		}
-		return paisMasVendedor;
-	}
-	
-	public static String fabricaMayorVentas () {
-		Integer mayor = 0;
-		String fabricanteMayor = null;
-		
-		for (int i = 0; i < fabricantes.size(); i++){
-			int f = Collections.frequency(fabricantes, fabricantes.get(i));
-			
-			if (mayor < f) {
-				mayor = f;
-				fabricanteMayor = fabricantes.get(i).getNombre();
-			}
-		}
-		return fabricanteMayor;
-	}
+//	public String paisMasVendedor () {
+//		Integer mayor = 0;
+//		String paisMasVendedor = null;
+//		
+//		for (int i = 0; i < fabricantes.size(); i++){
+//			int f = Collections.frequency(fabricantes, fabricantes.get(i).getPais());
+//			
+//			if (mayor < f) {
+//				mayor = f;
+//				paisMasVendedor = fabricantes.get(i).getPais().getNombre();
+//			}
+//		}
+//		return paisMasVendedor;
+//	}
+//	
+//	public String fabricaMayorVentas () {
+//		Integer mayor = 0;
+//		String fabricanteMayor = null;
+//		
+//		for (int i = 0; i < fabricantes.size(); i++){
+//			int f = Collections.frequency(fabricantes, fabricantes.get(i));
+//			
+//			if (mayor < f) {
+//				mayor = f;
+//				fabricanteMayor = fabricantes.get(i).getNombre();
+//			}
+//		}
+//		return fabricanteMayor;
+//	}
 }

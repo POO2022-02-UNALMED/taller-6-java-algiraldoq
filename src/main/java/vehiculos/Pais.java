@@ -15,6 +15,7 @@ public class Pais {
 	}
 	
 	public void paisMasVendedor() {
-		Vehiculo.paisMasVendedor();
+		Fabricante.fabricaMayorVentas().getPais();
+		
 	}
 }
