@@ -9,10 +9,10 @@ public class Vehiculo {
 	public Integer peso;
 	public String traccion;
 	public Fabricante fabricante;
-	public Integer CantidadVehiculos;
-	public Integer cantidadAutomoviles;
-	public Integer cantidadCamionetas;
-	public Integer cantidadCamiones;
+	public static Integer CantidadVehiculos;
+	public static Integer cantidadAutomoviles;
+	public static Integer cantidadCamionetas;
+	public static Integer cantidadCamiones;
 	
 	public Vehiculo (String placa, Integer puertas, Integer velocidadmaxima, String nombre, Integer precio, Integer peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
@@ -89,11 +89,11 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 	}
 
-	public Integer getCantidadVehiculos() {
+	public static Integer getCantidadVehiculos() {
 		return CantidadVehiculos;
 	}
 
-	public void setCantidadVehiculos(Integer cantidadVehiculos) {
+	public static void setCantidadVehiculos(Integer cantidadVehiculos) {
 		CantidadVehiculos = cantidadVehiculos;
 	}
 
